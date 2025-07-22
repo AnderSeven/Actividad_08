@@ -11,7 +11,12 @@ def suma_naturales(n):
         return n + suma_naturales(n -1)
 
 def fibonacci(n):
-    if
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1)
 
 opciones = 0
 a = False
@@ -39,6 +44,11 @@ while a == False:
             else:
                 print("El numero debe de ser mayor a 0")
         case 3:
+            numero = int(input("Ingrese un numero: "))
+            if numero >= 0:
+                print(f"El numero {numero} de la serie fibonaci es: {fibonacci(numero)}")
+            else:
+                print("El numero debe de ser positivo w")
         case 4:
         case 5:
         case 6:
