@@ -18,6 +18,13 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1)
 
+def contar_letra(palabra, letra):
+    if palabra == " ":
+        return 0
+    else:
+        return
+
+
 opciones = 0
 a = False
 while a == False:
