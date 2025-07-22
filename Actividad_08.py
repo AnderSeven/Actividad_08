@@ -4,6 +4,15 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 
+def suma_naturales(n):
+    if n == 1:
+        return 1
+    else:
+        return n + suma_naturales(n -1)
+
+def fibonacci(n):
+    if
+
 opciones = 0
 a = False
 while a == False:
@@ -22,9 +31,13 @@ while a == False:
             if numero > 0:
                 print(f"El factorial de {numero} es: {factorial(numero)}")
             else:
-                print("El numero debe de ser positivo")
-
+                print("El numero debe de ser mayor a 0")
         case 2:
+            numero = int(input("Ingrese un numero entero: "))
+            if numero > 0:
+                print(f"La suma de los primeros {numero} numeros naturales es: {suma_naturales(numero)}")
+            else:
+                print("El numero debe de ser mayor a 0")
         case 3:
         case 4:
         case 5:
