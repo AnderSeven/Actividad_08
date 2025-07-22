@@ -1,3 +1,9 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
 opciones = 0
 a = False
 while a == False:
@@ -12,7 +18,12 @@ while a == False:
     opciones = int(input("Elija una opcion: "))
     match opciones:
         case 1:
-            print()
+            numero = int(input("Ingrese un numero: "))
+            if numero > 0:
+                print(f"El factorial de {numero} es: {factorial(numero)}")
+            else:
+                print("El numero debe de ser positivo")
+
         case 2:
         case 3:
         case 4:
@@ -20,5 +31,6 @@ while a == False:
         case 6:
         case 7:
             print("Gracias por usar el sistema")
+            a = True
         case _:
             print("Opcion invalida")
